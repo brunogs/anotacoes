@@ -1,0 +1,160 @@
+> Migraçao incompleta
+	- versao de dependencias
+
+> Documentaçao
+	- nao tem
+	- desatualizada
+> Codigo obscuro
+	- Pessoas
+
+> Deploy com bug
+
+> Versionamento
+	- tarefas novas
+	- entrega de coisas quebradas
+
+> Tarefas com problemas
+
+> Falta de tempo
+	- teste
+
+> Mistura de tecnologia
+	- alto aprendizado
+	- maquina de dev <> prod
+
+> Dependencias
+	- minha máquina funciona
+
+> Codigo legado
+	- teste de unidade
+	- testes de interface
+
+
+---------------------------------
+Controle de versao
+
+ClearCase - Lock
+
+--------Distribuido--------
+SVN/CVS
+H8       
+Bazaar  
+VTFS
+
+
+GitSvn >> integracao de git com Svn
+bitbucket.org >> servidor de Git, aceita projetos privados
+
+
+---------------------------------
+
+Fragmentar as atualizacoes em commits locais
+ao termino do requisoto fazer o push no server
+
+----------------------------------
+
+Git - Comandos
+
+init -> Cria um repositorio no diretorio
+add -> Adiciona arquivo no repositorio local
+commit -> Atualiza a versao localmente
+	commit -m "Msg" : adiciona mensagem no commit
+
+config --global user.email "email@"
+config --global user.name "nome"
+
+
+add <file> -> adiciona arquivos especificos
+status -> indica a situacao do arquivo
+	change not staged > Alterados mas nao serao commitados
+	untracked > Nunca entraram no repositorio
+	Staged for commit > arquivos que serao enviados no commit corrente
+	Index > Arquivos commitados
+
+log -> Mostra historicos de commits
+whatchanged -> Mostra historicos de commits, incluindo arquivos
+whatchanged -p -> mostra hitoricos de commits, incluindo arquivos e linhas
+
+rm -> remove arquivo
+
+remote add <apelido> <endereco> -> Adiciona um repositorio remoto
+
+push <repositorio> <branch> -> Envia para repositorio remoto
+push -u -> Cria um link para fazer o push para os respositorios remotos
+
+******
+ssh-keygen -t <tipo criptografia rsa/ssa> -> cria arquivo de autenticacao
+ssh utiliza a porta 22
+******
+
+pull -> baixa informacoes do repositorio
+
+clone <url> -> copia um repositorio ja configura os apelidos de repositorios
+
+branch <nome> -> cria branch novo
+
+branch -> indica qual branch locais
+branch -r -> branch remotos
+branch -a -> remotos e locais 
+
+checkout <nome branch> -> Troca de branch
+checkout -b -> Cria e troca de branch
+
+Configuracao de git para ajudar no terminal
+******************************
+PS1="\[\033[38m\]\u";
+PS1="$PS1\[\033[32m\] \w";
+PS1="$PS1\[\033[31m\]";
+PS1="$PS1\`git branch 2>/dev/null | grep \"^\*\" | \\
+                           sed -r \"s/\*\ (.*)/ \(\1\)/\"\`";
+export PS1="$PS1\[\033[37m\]$\[\033[00m\]";
+**********************
+
+
+commit -am "msg" -> commit de todos arquivos modificados
+
+
+***** dica
+fazer merges sempre no branch temporario
+
+rebase <nome branch> -> Traz commits locais
+
+Apos correcao de conflitos, necessario comando add
+e depois:
+rebase --continue
+
+diff <file>- diferenca de arquivos
+
+merge -> junta as informacoes, caso existam commits diferentes o comando merge sempre cria um novo commit 
+
+&& entre comandos so continuam caso todos voltem true
+*************
+git checkout master && git pull && git checkout work && git rebase master && git checkout master && git merge work && git push && git checkout work
+**********
+config --global color.ui
+always
+never
+auto
+
+É possivel criar alias no arquivo de config
+
+pull request -> requisita do repositorio original
+
+vim -> editor terminal
+
+-----------------------------------------------------------
+
+VRaptor
+
+FrontController - > recebe requisicoes e direciona para controlers
+
+@Resource -> e um possivel controller
+
+Padrao - Classe e pasta, metodo e pagina
+
+@Component -> para implementacoes injetaveis
+classes sao injetadas pelo construtor
+
+
+
+

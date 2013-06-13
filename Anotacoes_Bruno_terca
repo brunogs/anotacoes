@@ -1,0 +1,44 @@
+Revisao
+
+Controler de versao
+- Lock:problema de produtividade
+- Merge: problema com commit sempre remotos
+- Distribuido: Resolve produtividade e permiti versionamento local
+
+******
+Dica git
+
+.git/info/exclude -> esse arquivo possibilita excluir arquivo local para o usuario
+******
+
+Gerencia de dependencia
+- maven
+- ivy.jar
+- gradle
+- sbt
+
+**************
+
+Novo projeto
+
+Baixar dependencias
+
+Importar projeto
+
+Deixar o projeto sem erros de compilacao
+
+Encontrar padroes
+
+Pair Programming
+-
+
+********************
+
+Test Unitario
+
+- Cenário
+- Lógica
+- Assertiva
+
+Test de unidade tambem e documentacao
+E apresenta feedback de documentacao
