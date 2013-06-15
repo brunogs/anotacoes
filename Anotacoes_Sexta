@@ -1,0 +1,27 @@
+Plugins
+
+Git
+Green Ball
+Radiator
+
+Garantir deploys, com menor quantidade de falhas
+- Homologacao
+
+sh ~/tomcat-homolog/bin/shutdown.sh
+rm -rf ~/tomcat-homolog/webapps/agiletickets*
+cp target/agiletickets.war ~/tomcat-homolog/webapps
+BUILD_ID="hack feio..." sh ~/tomcat-homolog/bin/startup.sh
+
+Teste de exemplo com selenium
+
+@Test
+	public void verificaSenhaInvalida() throws Exception {
+		WebDriver firefoxDriver = new FirefoxDriver();
+		firefoxDriver.get("http://online.caelum.com.br");
+		firefoxDriver.findElement(By.name("email")).sendKeys("bgomes@caelum.com.br");
+		firefoxDriver.findElement(By.name("password")).sendKeys("shibata");
+		firefoxDriver.findElement(By.className("form-login")).submit();
+		String text = firefoxDriver.findElement(By.className("errors")).findElement(By.tagName("li")).getText();
+		assertThat(text, Matchers.containsString("Email ou senha inválida!"));
+		firefoxDriver.close();
+	}
