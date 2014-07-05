@@ -1,0 +1,65 @@
+C : 20
+real	0m0.002s
+
+
+Java: 20
+real	0m0.085s
+
+
+C: 30
+real	0m0.012s
+
+Java: 30
+real	0m0.101s
+
+C: 40
+real	0m0.695s
+
+
+Java: 40
+real	0m1.409s
+
+C: 45
+real	0m7.533s
+
+
+Java: 45
+real	0m14.754s
+
+------------------------------------------------------
+
+Java -server: 40
+real	0m1.396s
+
+Java -client: 40
+real	0m1.427s
+
+
+time java -server -XX:+PrintCompilation Fibonacci 40
+75    1             Fibonacci::fibonacci (26 bytes)
+real	0m1.411s
+
+
+
+time java -XX:CompileThreshold=3000 -XX:+PrintCompilation Fibonacci 40
+58    1             java.lang.String::hashCode (55 bytes)
+63    2             Fibonacci::fibonacci (26 bytes)
+real	0m1.507s
+
+
+time java -XX:CompileThreshold=1 Fibonacci 40
+real	0m2.040s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
