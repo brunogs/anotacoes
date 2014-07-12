@@ -1,0 +1,23 @@
+ClassLoader
+
+Classpath
+
+Primeiras linguagens OO
+Simula            Smalltalk
+
+receita utilitaria, para OO
+
+1. o que é ?
+2. o que tem ?
+3. o que faz ou o que eu faço com ?
+
+YAGNI << importante
+
+Metricas:
+LOC
+CC
+LCOM
+AA - Acoplamento Aferente
+AE - Acoplamente Eferente
+
+Ctrl + 2 + L
