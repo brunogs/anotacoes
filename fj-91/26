@@ -31,5 +31,7 @@ escalabilidade x disponibilidade x confiabilidade
 
 SPF - Single Point of Failure
 
+memcached - key-value store
 
+HTML 5 implementa todos verbos http
 
