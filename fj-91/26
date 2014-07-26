@@ -1,0 +1,35 @@
+Integracao
+
+Indempotente
+
+aceitacao - dica: selenium
+
+usar aceitacao como um possivel teste temporario, para iniciacao de testes em um sistema legado
+
+Landscape arquiteturial
+
+N-tiers.
+Replicaçao de session
+
+Servidor de proxy - Load balancer
+
+
+roundrobin
+
+Sticky Session - manda para qualquer servidor
+
+persistent session - servidor especifico
+
+
+------------------------------------------------
+exemplo de gestao
+Triangulo de ferro - custo x tempo x tempo
+-------------------------------------------------
+equivalente em arquitetura
+escalabilidade x disponibilidade x confiabilidade
+-------------------------------------------------
+
+SPF - Single Point of Failure
+
+
+
