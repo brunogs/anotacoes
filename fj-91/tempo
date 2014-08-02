@@ -1,0 +1,24 @@
+Sem cursor 5937 milisegundos
+
+Com cursor 4604 milisegundos
+
+Hibernate: update Transacao set valor=valor*1.1
+Tempo gasto 18598ms
+
+
+update stateless
+Tempo gasto 212674ms
+
+consulta sem cache 2n
+tempo total gasto 3284ms
+tempo total gasto 2076ms
+tempo total gasto 3199ms
+
+consulta com cache 2n
+tempo total gasto 4317ms
+tempo total gasto 2008ms
+tempo total gasto 2063ms
+tempo total gasto 1062ms
+
+
+

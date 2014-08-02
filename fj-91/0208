@@ -1,0 +1,25 @@
+lamentacoes
+
+EntityManagerFactory - controla pool de conexoes
+esse cara deve ser instanciado uma unica vez na aplicacao
+
+entitymanager - area de conexao
+
+
+Querys jpa, por default são Lazy
+fetch join*
+
+Cache segundo nível,
+Relacionamentos sao configuraveis
+
+
+cache reverso
+
+
+
+trello - kanban free
+
+digital ocean
+linode
+
+Mashup
